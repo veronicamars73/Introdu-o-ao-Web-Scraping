@@ -21,6 +21,7 @@ um parser é um software responsável por realizar a conversão de uma entrada p
 """
 pagina_bs = BeautifulSoup(objeto_response.content, 'html.parser')
 
+
 # Primeiro conseguiremos os nomes de cada jogador
 nomes_jogadores = [] # Lista ordenada dos nomes de todos os jogadores
 
@@ -48,7 +49,6 @@ for tag_liga in tags_ligas:
         pais_jogadores.append(imagem_pais['title'])
     
 
-
 # Por fim iremos conseguir as informacões de custo dos jogadores
 custos_jogadores = []
 
@@ -62,6 +62,8 @@ for tag_custo in tags_custos:
     preco_numerico = float(texto_preco)
     custos_jogadores.append(preco_numerico)
 
-df = pd.DataFrame({"Jogadores":nomes_jogadores,"Preços":custos_jogadores,"Países de Origem":pais_jogadores})
+# Criando um DataFrame a partir de nossos dados
+df = pd.DataFrame({"Jogadore":nomes_jogadores,"Preço (milhão de euro)":custos_jogadores,"País de Origem":pais_jogadores})
 
+# Imprimindo os dados que obtemos
 print(df)
