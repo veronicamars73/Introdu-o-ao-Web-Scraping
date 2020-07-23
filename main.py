@@ -63,7 +63,7 @@ for tag_custo in tags_custos:
     custos_jogadores.append(preco_numerico)
 
 # Criando um DataFrame a partir de nossos dados
-df = pd.DataFrame({"Jogadore":nomes_jogadores,"Preço (milhão de euro)":custos_jogadores,"País de Origem":pais_jogadores})
+df = pd.DataFrame({"Jogador":nomes_jogadores,"Preço (milhão de euro)":custos_jogadores,"País de Origem":pais_jogadores})
 
 # Imprimindo os dados que obtemos
 print(df)
