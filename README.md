@@ -1,6 +1,6 @@
 # Introdução ao Web Scraping
 
-Projeto criado durante a produção do tutorial "Recebendo Informações do Transfermarkt: Uma Introdução ao Web Scraping" postado no dev.to.
+Projeto criado durante a produção do tutorial "Recebendo Informações do Transfermarkt: Uma Introdução ao Web Scraping" postado no [meu perfil do dev.to](https://dev.to/lisandramelo/recebendo-informacoes-do-transfermarkt-uma-introducao-ao-web-scraping-188o).
 
 # Instrução de execução do programa
 
